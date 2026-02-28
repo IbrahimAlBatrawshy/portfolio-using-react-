@@ -2,6 +2,7 @@ import React from 'react';
 import { personalInfo } from '../data';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+import logoImg from '../assets/logo.png';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -13,8 +14,9 @@ const Footer = () => {
 
             <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between">
                 <div className="mb-6 md:mb-0 text-center md:text-left">
-                    <Link to="home" smooth={true} duration={500} className="text-2xl font-bold cursor-pointer text-gradient inline-block mb-2">
-                        {personalInfo.name.split(' ')[0]}
+                    <Link to="home" smooth={true} duration={500} className="cursor-pointer inline-flex flex-col md:flex-row items-center gap-3 mb-4">
+                        <img src={logoImg} alt="Logo" className="h-12 w-auto object-contain" />
+                        <span className="text-2xl font-bold text-gradient">{personalInfo.name.split(' ')[0]}</span>
                     </Link>
                     <p className="text-gray-500 text-sm">
                         Building digital experiences that matter.

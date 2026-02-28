@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { personalInfo } from '../data';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import cvFile from '../assets/FlutterCv.pdf';
+import logoImg from '../assets/logo.png';
 
 const navLinks = [
     { name: 'Home', to: 'home' },
@@ -28,8 +29,9 @@ const Navbar = () => {
     return (
         <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-surface/90 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'}`}>
             <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-                <Link to="home" smooth={true} duration={500} className="text-2xl font-bold cursor-pointer text-gradient">
-                    {personalInfo.name.split(' ')[0]}
+                <Link to="home" smooth={true} duration={500} className="cursor-pointer flex items-center gap-3">
+                    <img src={logoImg} alt="Logo" className="h-10 w-auto object-contain" />
+                    <span className="text-2xl font-bold text-gradient hidden sm:block">{personalInfo.name.split(' ')[0]}</span>
                 </Link>
 
                 {/* Desktop Nav */}
