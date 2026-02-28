@@ -3,32 +3,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { personalInfo } from '../data';
 import profileImg from '../assets/Adobe Express - file (13).png';
-import LiquidEther from './LiquidEther';
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden bg-background">
-            <div className="absolute inset-0 z-0 pointer-events-none">
-                <LiquidEther
-                    colors={['#5227FF', '#FF9FFC', '#B19EEF']}
-                    mouseForce={20}
-                    cursorSize={100}
-                    isViscous
-                    viscous={30}
-                    iterationsViscous={32}
-                    iterationsPoisson={32}
-                    resolution={0.5}
-                    isBounce={false}
-                    autoDemo
-                    autoSpeed={0.5}
-                    autoIntensity={2.2}
-                    takeoverDuration={0.25}
-                    autoResumeDelay={3000}
-                    autoRampDuration={0.6}
-                    style={{ width: '100%', height: '100%' }}
-                />
-            </div>
-
+        <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden bg-transparent">
             {/* Background gradients */}
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] -z-10" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] -z-10" />
