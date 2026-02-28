@@ -13,7 +13,7 @@ export default {
         secondary: '#8b5cf6', // soft purple
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['"Space Mono"', 'monospace'],
       }
     },
   },
