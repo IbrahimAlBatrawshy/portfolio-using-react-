@@ -56,12 +56,12 @@ const Projects = () => {
                                     {project.video ? (
                                         <div className="w-full h-full relative">
                                             <img
-                                                src={`/src/assets/${project.image}`}
+                                                src={project.image}
                                                 alt={project.title}
                                                 className="w-full h-full object-cover opacity-80 absolute inset-0 group-hover:opacity-0 transition-opacity duration-500"
                                             />
                                             <video
-                                                src={`/src/assets/${project.video}`}
+                                                src={project.video}
                                                 className="w-full h-full object-cover opacity-0 absolute inset-0 group-hover:opacity-100 transition-opacity duration-500"
                                                 muted
                                                 loop
@@ -75,7 +75,7 @@ const Projects = () => {
                                         </div>
                                     ) : project.image ? (
                                         <img
-                                            src={`/src/assets/${project.image}`}
+                                            src={project.image}
                                             alt={project.title}
                                             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                                         />

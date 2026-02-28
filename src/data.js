@@ -2,6 +2,14 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaCss3Alt, FaReact, FaNodeJs, FaHtml5 } from 'react-icons/fa';
 import { SiTailwindcss, SiFlutter, SiDart, SiFirebase, SiJavascript, SiGit, SiPostman } from 'react-icons/si';
 
+import imgHiddenTres from './assets/Hidden tres.png';
+import imgGradProject from './assets/Graduation project.png';
+import imgMovieApp from './assets/escanorhub.png';
+import imgEducationApp from './assets/learning.png';
+import imgShopWeb from './assets/shopweb.png';
+import vidShopWeb from './assets/HEREW.mp4';
+import imgIsupply from './assets/pro1.png';
+
 export const personalInfo = {
     name: "Ibrahim Al-Batrawshy",
     role: "Flutter Developer & Front-End Developer",
@@ -48,7 +56,7 @@ export const projects = [
         category: "Flutter",
         githubUrl: "https://github.com/IbrahimAlBatrawshy/Hidden-Treasures",
         liveUrl: "#",
-        image: "Hidden tres.png"
+        image: imgHiddenTres
     },
     {
         id: 2,
@@ -58,7 +66,7 @@ export const projects = [
         category: "Front-End",
         githubUrl: "https://github.com/IbrahimAlBatrawshy/Horas",
         liveUrl: "#",
-        image: "Graduation project.png"
+        image: imgGradProject
     },
     {
         id: 3,
@@ -68,7 +76,7 @@ export const projects = [
         category: "Front-End",
         githubUrl: "https://github.com/IbrahimAlBatrawshy/MoiveusingReactITI",
         liveUrl: "#",
-        image: "escanorhub.png"
+        image: imgMovieApp
     },
     {
         id: 4,
@@ -78,7 +86,7 @@ export const projects = [
         category: "Flutter",
         githubUrl: "https://github.com/IbrahimAlBatrawshy/Education-App",
         liveUrl: "#",
-        image: "learning.png"
+        image: imgEducationApp
     },
     {
         id: 5,
@@ -88,8 +96,8 @@ export const projects = [
         category: "Front-End",
         githubUrl: "https://github.com/IbrahimAlBatrawshy", // Placeholder since no link was provided
         liveUrl: "#",
-        image: "shopweb.png",
-        video: "HEREW.mp4"
+        image: imgShopWeb,
+        video: vidShopWeb
     },
     {
         id: 6,
@@ -99,7 +107,7 @@ export const projects = [
         category: "Flutter",
         githubUrl: "https://github.com/IbrahimAlBatrawshy/ISUPPLY",
         liveUrl: "#",
-        image: "pro1.png"
+        image: imgIsupply
     }
 ];
 
