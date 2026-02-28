@@ -32,6 +32,13 @@ export const skills = {
         { name: "Cubit/Bloc", icon: SiFlutter, color: "text-blue-400" },
         { name: "Provider", icon: FaReact, color: "text-cyan-400" } // Placeholder icon
     ],
+    "Front-End": [
+        { name: "HTML", icon: FaHtml5, color: "text-orange-500" },
+        { name: "CSS", icon: FaCss3Alt, color: "text-blue-500" },
+        { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
+        { name: "React", icon: FaReact, color: "text-cyan-400" },
+        { name: "Tailwind", icon: SiTailwindcss, color: "text-teal-400" }
+    ],
     "Concepts": [
         { name: "OOP", icon: FaNodeJs, color: "text-green-500" },
         { name: "Clean Arch", icon: FaReact, color: "text-purple-400" },
